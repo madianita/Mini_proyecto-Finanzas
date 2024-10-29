@@ -31,6 +31,15 @@ class User extends Authenticatable
         'password',
     ];
 
+    public function ingresos()
+    {
+        return $this->hasMany(Ingreso::class, 'id_user');
+    }
+
+    public function egresos()
+    {
+        return $this->hasMany(Egreso::class, 'id_user');
+    }
     /**
      * The attributes that should be hidden for serialization.
      *

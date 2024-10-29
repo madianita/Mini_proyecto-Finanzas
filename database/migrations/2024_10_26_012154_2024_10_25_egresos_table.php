@@ -14,9 +14,10 @@ return new class extends Migration
         Schema::create("egresos", function (Blueprint $table) {
             $table->bigIncrements("id");
             $table->integer("monto");
-            $table->dateTime("fecha");
+            $table->date("fecha");
             $table->text("descripcion");
             $table->foreignId("id_categoria")->constrained("categorias")->onDelete("cascade");
+            $table->foreignId("id_user")->constrained('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

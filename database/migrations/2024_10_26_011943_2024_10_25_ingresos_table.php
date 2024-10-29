@@ -14,9 +14,10 @@ return new class extends Migration
         Schema ::create("ingresos", function (Blueprint $table) {
             $table->bigIncrements("id");
             $table->integer("monto");
-            $table->dateTime("fecha");
+            $table->date("fecha");
             $table->text("descripcion")->nullable();
             $table->foreignId("id_categoria")->nullable()->constrained('categorias')->onDelete('set null');
+            $table->foreignId("id_user")->constrained('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

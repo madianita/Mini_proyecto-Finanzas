@@ -6,7 +6,7 @@
     <title>Bienvenida</title>
 </head>
 <body>
-    <h1>{{ $welcomeMessage }}</h1>
+    <h1>{{ $bienvenida }}</h1>
 </body>
 </html>
 @endsection
