@@ -17,14 +17,14 @@
                 </a>
             </li>
 
-            <li class="menu-item {{ request()->routeIs('categorias') ? 'active' : '' }}">
-                <a href="categorias" class="menu-link">
+            <li class="menu-item {{ request()->routeIs('categorias.index') ? 'active' : '' }}">
+                <a href="{{ route('categorias.index') }}" class="menu-link">
                     <i class="menu-icon tf-icons bx bx-home-circle"></i>
                     <div data-i18n="Analytics">Categorias</div>
                 </a>
             </li>
 
-            <li class="menu-item {{ request()->routeIs('ingresos') ? 'active' : '' }}">
+            <li class="menu-item {{ request()->routeIs('ingreso') ? 'active' : '' }}">
                 <a href="ingresos" class="menu-link">
                     <i class="menu-icon tf-icons bx bx-home-circle"></i>
                     <div data-i18n="Analytics">Ingresos</div>
@@ -39,15 +39,15 @@
             </li>
 
 
-            <li class="menu-item {{ request()->routeIs('home') ? 'active' : '' }}">
-                <a href="home" class="menu-link">
+            <li class="menu-item {{ request()->routeIs('reportes.ingresos') ? 'active' : '' }}">
+                <a href="{{ route('reportes.ingresos') }}" class="menu-link">
                     <i class="menu-icon tf-icons bx bx-home-circle"></i>
                     <div data-i18n="Analytics">Reporte de Ingresos</div>
                 </a>
             </li>
 
-            <li class="menu-item {{ request()->routeIs('home') ? 'active' : '' }}">
-                <a href="home" class="menu-link">
+            <li class="menu-item {{ request()->routeIs('reportes.egresos') ? 'active' : '' }}">
+                <a href="{{ route('reportes.egresos') }}" class="menu-link">
                     <i class="menu-icon tf-icons bx bx-home-circle"></i>
                     <div data-i18n="Analytics">Reporte de egresos</div>
                 </a>

@@ -8,10 +8,10 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $welcomeMessage = "¡Bienvenido a mi aplicación!";
+        $bienvenida = "¡Holaaa!";
 
         return view('home', [
-            'welcomeMessage' => $welcomeMessage,
+            'bienvenida' => $bienvenida,
         ]);
     }
 }

@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema ::create("categorias", function (Blueprint $table) {
             $table->bigIncrements("id");
-            $table->integer("nombre");
+            $table->string("nombre");
             $table->timestamps();
         });
     }
